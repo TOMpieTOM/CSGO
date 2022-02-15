@@ -1,0 +1,177 @@
+/*Colors: http://paletton.com/#uid=54h0u0k3i7H4mcB3L9O4O7c9y6a */
+/*Custom Color:
+  http://paletton.com/#uid=100050kuiiUvNtru4nlwudexs7O */
+
+:root {
+  /*Primary LIGHTEST --> DARKEST*/
+  --Primary1: #3F3D45;
+  --Primary2: #323036;
+  --Primary3: #27262A;
+  --Primary4: #242227;
+  --Primary5: #1B1922;
+  /*Secondary #1 LIGHTEST --> DARKEST*/
+  --Secondary11: #403A43;
+  --Secondary12: #322E34;
+  --Secondary13: #282529;
+  --Secondary14: #242126;
+  --Secondary15: #1E1721;
+  /*Secondary #2 LIGHTEST --> DARKEST*/
+  --Secondary21: #3C3E44;
+  --Secondary22: #2F3135;
+  --Secondary23: #262729;
+  --Secondary24: #222327;
+  --Secondary25: #181B21;
+}
+
+body {
+  background-color: ivory;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-family: 'Varela Round', 'sans-serif';
+}
+
+/*  Menu Bar */
+.Team-Selector {
+  display: none;
+}
+
+.Dropdown {
+  margin: 1vw 30%;
+}
+
+.Dropbtn {
+  background-color: rgb(100, 200, 70);
+
+  border-radius: 5vw;
+  padding: 3vw 0;
+  width: 38vw;
+
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 700;
+
+  border: none;
+  cursor: pointer;
+}
+
+.Content a {
+  color: black;
+  padding: 2svw;
+  text-decoration: none;
+  display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.Dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.Content {
+  display: none;
+  position: absolute;
+  background-color: #ebebeb;
+  width: 38vw;
+  padding: 2vw 0;
+  text-align: center;
+  font-size: 5vw;
+  border-radius: 5vw;
+  margin-top: 1vw;
+  z-index: 2;
+}
+/* Change color of dropdown links on hover */
+.Content a:hover {background-color: #ddd; border-radius: 5vw;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*  Player Displays  */
+.card {
+  background-color: white;
+	margin: 2vw auto 10vw auto;
+	width: 80%;
+	overflow: hidden;
+	box-shadow: inset 0px 0px 5vw 0.1vw rgb(173, 173, 173);
+	font-family: 'Varela Round';
+	border-radius: 10vw;
+}
+/*  Card Images  */
+.card .image {
+	position: relative;
+}
+.card .image #background-img {
+	width: 100%;
+}
+.card .image #player-img {
+	width: 60%;
+	border-radius: 100%;
+	z-index: 1;
+	position: absolute;
+	left: 20%; top: 35%;
+}
+
+.card .info-box #player-name {
+	margin-top: 20vw;
+	text-align: center;
+	font-size: 4vw;
+}
+/*  Player Statistics  */
+.card .info-box .stats{
+	display: flex;
+	position: relative;
+	line-height: 2vw;
+  padding: 0;
+	width: 80%;
+	left: 10%; right: 10%; top: -2vw;
+}
+.card .info-box .stats #kills {
+	flex-grow: 1;
+	text-align: center;
+}
+.card .info-box .stats #deaths {
+	flex-grow: 1;
+	text-align: center;
+}
+.card .info-box .stats h2 {
+	font-size: 4vw;
+}
+.card .info-box .stats h3 {
+  margin-top: -2vw;
+	font-size: 3vw;
+	color: rgb(105, 105, 105);
+}
+/*  Account button  */
+.card .info-box .account-button {
+	margin-top: 3vw;
+	text-align: center;
+}
+.card .info-box .account-button #button {
+	cursor: pointer;
+	font-family: 'Varela Round';
+	font-weight: 700;
+	width: 35vw;
+	height: 7vw;
+	font-size: 3.5vw;
+	border-radius: 5vw;
+	border: none;
+	background-color: rgb(255,201,14);
+}
+/*  Extra Info  */
+.card .info-box .info-text {
+	text-align: center;
+	font-size: 3vw;
+	font-weight: 500;
+	color: rgb(78, 77, 77);
+
+	position: relative;
+	margin: 3vw 0 4vw 0;
+	width: 80%;
+	left: 10%; right: 10%;
+}
+
+/*  Animations  */
+
+
+
